@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Requisições</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="card">
+    <h1>Requisição de Compras</h1>
+    <p>Usuário: <b id="usuario"></b></p>
+  </div>
+
+  <div class="card">
+    <h2>Nova Requisição</h2>
+    <input id="descricao" placeholder="Descrição do pedido">
+    <button class="btn" onclick="criar()">Criar</button>
+  </div>
+
+  <div class="card">
+    <h2>Lista de Requisições</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Usuário</th>
+          <th>Descrição</th>
+          <th>Status</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="lista"></tbody>
+    </table>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
